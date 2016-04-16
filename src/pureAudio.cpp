@@ -1,3 +1,8 @@
+/*
+This program only uses MonoLoader in streaming mode. every row of data
+ is one tick, there are 44100 ticks in one second, thus the total row 
+ number is time in second * 44100.
+*/
 #include <iostream>
 #include <fstream>
 #include <essentia/algorithmfactory.h>
@@ -13,8 +18,8 @@ using namespace essentia::scheduler;
 int main(int argc, char* argv[]) {
 
   if (argc != 2) {
-    cout << "ERROR: incorrect number of arguments." << endl;
-    cout << "Usage: " << argv[0] << " audio_input" << endl;
+    cerr << "ERROR: incorrect number of arguments." << endl;
+    cerr << "Usage: " << argv[0] << " audio_input >> file_output" << endl;
     // creditLibAV();
     exit(1);
   }
@@ -40,18 +45,19 @@ int main(int argc, char* argv[]) {
   cerr << "-------- connecting algos --------" << endl;
 
   // Audio -> POOL
-  audio->output("audio")  >> PC(pool, "rhythm.ticks");
+  audio->output("audio")  >> PC(pool, "ticks");
 
   /////////// STARTING THE ALGORITHMS //////////////////
-  cerr << "-------- start processing " << audioFilename << " --------" << endl;
+  cerr << "-------- start processing --------" << endl;
 
   Network(audio).run();
 
-  cerr << "-------- writing to cout --------" << endl;
+  cerr << "-------- writing to cout  --------" << endl;
   // writing results to file
   vector<Real> ticks;
-  if (pool.contains<vector<Real> >("rhythm.ticks")) { // there might be empty ticks
-    ticks = pool.value<vector<Real> >("rhythm.ticks");
+  if (pool.contains<vector<Real> >("ticks")) { // there might be empty ticks
+    ticks = pool.value<vector<Real> >("ticks");
+    cerr << "Total ticks: " << ticks.size() << endl;
   }
   // // ostream* fileStream = new ofstream(outputFilename.c_str());
   for (size_t i=0; i<ticks.size(); ++i) {
