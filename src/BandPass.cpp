@@ -75,9 +75,10 @@ int main(int argc, char* argv[]) {
     cerr << "Total ticks: " << ticks.size() << endl;
   }
   // // ostream* fileStream = new ofstream(outputFilename.c_str());
+  cout << "id,tick" << endl;
   for (size_t i=0; i<ticks.size(); ++i) {
     // *fileStream << ticks[i] << "\n";
-    cout << ticks[i] << endl;
+    cout << i << "," << ticks[i] << endl;
   }
   // delete fileStream;
 
