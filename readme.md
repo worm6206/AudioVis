@@ -4,11 +4,11 @@ Essentia Guide (For MAC OS X, Linux might also work)
 
 1. run(requires homebrew)
 	
-`brew install pkg-config gcc readline sqlite gdbm freetype libpng`
+	`brew install pkg-config gcc readline sqlite gdbm freetype libpng`
 
 2. run(requires homebrew)
 
-`brew install libyaml fftw ffmpeg libsamplerate libtag`
+	`brew install libyaml fftw ffmpeg libsamplerate libtag`
 
 
 3. Download essentia from [their Github](https://github.com/MTG/essentia/archive/master.zip)
@@ -17,15 +17,15 @@ Essentia Guide (For MAC OS X, Linux might also work)
 
 5. go into directory, run
 	
-`./waf configure --mode=release --build-static --with-python --with-cpptests --with-examples --with-vamp --with-gaia`
+	`./waf configure --mode=release --build-static --with-python --with-cpptests --with-examples --with-vamp --with-gaia`
 
 6. run
 
-`./waf`
+	`./waf`
 
 7. run 
 
-`sudo ./waf install`
+	`sudo ./waf install`
 
 8. Essentia is now installed. 
 
