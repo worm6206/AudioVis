@@ -1,7 +1,8 @@
 /*
-This program only uses MonoLoader in streaming mode. every row of data
- is one tick, there are 44100 ticks in one second, thus the total row 
- number is time in second * 44100.
+An all-pass filter is a signal processing filter that 
+passes all frequencies equally in gain, but changes the 
+phase relationship among various frequencies. It does 
+this by varying its phase shift as a function of frequency.
 */
 #include <iostream>
 #include <fstream>

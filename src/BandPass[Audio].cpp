@@ -1,7 +1,8 @@
 /*
-This program only uses MonoLoader in streaming mode. every row of data
- is one tick, there are 44100 ticks in one second, thus the total row 
- number is time in second * 44100.
+A bandpass filter is an electronic device or 
+circuit that allows signals between two specific 
+frequencies to pass, but that discriminates against 
+signals at other frequencies.
 */
 #include <iostream>
 #include <fstream>

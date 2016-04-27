@@ -1,7 +1,5 @@
 /*
-This program only uses MonoLoader in streaming mode. every row of data
- is one tick, there are 44100 ticks in one second, thus the total row 
- number is time in second * 44100.
+This program has no filter, simply load and write.
 */
 #include <iostream>
 #include <fstream>

@@ -1,7 +1,16 @@
 /*
-This program only uses MonoLoader in streaming mode. every row of data
- is one tick, there are 44100 ticks in one second, thus the total row 
- number is time in second * 44100.
+High:
+A high-pass filter is an electronic filter 
+that passes signals with a frequency higher 
+than a certain cutoff frequency and attenuates 
+signals with frequencies lower than the cutoff 
+frequency.
+
+Low:
+A low-pass filter is a filter that passes signals 
+with a frequency lower than a certain cutoff 
+frequency and attenuates signals with frequencies 
+higher than the cutoff frequency. 
 */
 #include <iostream>
 #include <fstream>
