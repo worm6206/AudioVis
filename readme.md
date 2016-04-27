@@ -31,7 +31,7 @@ Essentia Guide (For MAC OS X, Linux might also work)
 
 9. Put your own code in `src/` and run make at the root directory of this project.
 
-12. Executable are at `build/`
+10. Executable are at `build/`
 
 ## COMPILE YOUR OWN CODE:
 
