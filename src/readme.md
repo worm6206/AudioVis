@@ -2,7 +2,7 @@
 
 * Input:
 
-	Audio file
+		Audio file
 
 * Output:
 
