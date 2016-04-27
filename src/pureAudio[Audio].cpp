@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 
   if (argc != 3) {
     cerr << "ERROR: incorrect number of arguments." << endl;
-    cerr << "Usage: " << argv[0] << " audio_input audio_output" << endl;
+    cerr << "Usage: " << argv[0] << " INPUT_AUDIO OUTPUT_AUDIO" << endl;
     // creditLibAV();
     exit(1);
   }

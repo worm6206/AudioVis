@@ -14,7 +14,7 @@
 
 * Usage:  
 
-	`./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
+	`./pureAudio INPUT_AUDIO > OUTPUT_TEXT`
 
 ## pureAudio[Audio]
 
@@ -54,7 +54,7 @@ OUTPUT_AUDIO example: output_audio.wav
 
 * Usage:
 
-	`./allPass INPUT_AUDIO >> OUTPUT_TEXT`
+	`./allPass INPUT_AUDIO > OUTPUT_TEXT`
 
 ## allPass[Audio]
 
@@ -94,7 +94,7 @@ OUTPUT_AUDIO example: output_audio.wav
 
 * Usage:
 
-	`./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 >> OUTPUT_TEXT`
+	`./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 > OUTPUT_TEXT`
 
 ## HighLowPass[Audio]
 
@@ -134,7 +134,7 @@ OUTPUT_AUDIO example: output_audio.wav
 
 * Usage:
 
-	`./BandPass INPUT_AUDIO FREQ_RANGE FREQ >> OUTPUT_TEXT`
+	`./BandPass INPUT_AUDIO FREQ_RANGE FREQ > OUTPUT_TEXT`
 
 ## BandPass[Audio]
 

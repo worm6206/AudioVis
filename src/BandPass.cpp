@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
   if (argc != 4) {
     cerr << "ERROR: incorrect number of arguments." << endl;
-    cerr << "Usage: " << argv[0] << " audio_input bandwidth(hz) cutoffFrequency(hz) > file_output" << endl;
+    cerr << "Usage: " << argv[0] << " INPUT_AUDIO FREQ_RANGE FREQ > OUTPUT_TEXT" << endl;
     // creditLibAV();
     exit(1);
   }
