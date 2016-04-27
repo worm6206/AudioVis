@@ -18,4 +18,6 @@ Output:
 
 Usage:  `./pureAudio INPUT_AUDIO OUTPUT_AUDIO`
 
-** OUTPUT_AUDIO example: output_audio.wav **
+```
+OUTPUT_AUDIO example: output_audio.wav
+```
