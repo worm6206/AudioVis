@@ -6,5 +6,4 @@ Input:
 Output:
 	stdout plain text
 
-Usage: 
-`./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
+Usage:  `./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
