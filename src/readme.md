@@ -1,12 +1,15 @@
 ## pureAudio
 
 * Input:
+
 	Audio file
 
 * Output:
+
 	stdout plain text
 
 * Description:
+
 	`pureAudio` is a program that doesn't modify the audio, but simply write the audio stream to `stdout`.
 
 Usage:  `./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
