@@ -2,7 +2,7 @@
 
 * Input:
 
-		Audio file
+	Audio file
 
 * Output:
 
@@ -12,17 +12,23 @@
 
 	`pureAudio` is a program that doesn't modify the audio, but simply write the audio stream to `stdout`.
 
-Usage:  `./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
+* Usage:  
+
+	`./pureAudio INPUT_AUDIO >> OUTPUT_TEXT`
 
 ## pureAudio[Audio]
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	Audio file
 
-Usage:  `./pureAudio INPUT_AUDIO OUTPUT_AUDIO`
+* Usage:
+
+	`./pureAudio INPUT_AUDIO OUTPUT_AUDIO`
 
 ```
 OUTPUT_AUDIO example: output_audio.wav
@@ -30,23 +36,31 @@ OUTPUT_AUDIO example: output_audio.wav
 
 ## allPass
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	stdout plain text
 
-Usage:  `./allPass INPUT_AUDIO >> OUTPUT_TEXT`
+* Usage:
+
+	`./allPass INPUT_AUDIO >> OUTPUT_TEXT`
 
 ## allPass[Audio]
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	Audio file
 
-Usage:  `./allPass\[Audio\] INPUT_AUDIO OUTPUT_AUDIO`
+* Usage:
+
+	`./allPass\[Audio\] INPUT_AUDIO OUTPUT_AUDIO`
 
 ```
 OUTPUT_AUDIO example: output_audio.wav
@@ -54,23 +68,31 @@ OUTPUT_AUDIO example: output_audio.wav
 
 ## HighLowPass
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	stdout plain text
 
-Usage:  `./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 >> OUTPUT_TEXT`
+* Usage:
+
+	`./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 >> OUTPUT_TEXT`
 
 ## HighLowPass[Audio]
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	Audio file
 
-Usage:  `./HighLowPass\[Audio\] INPUT_AUDIO FREQ_1 FREQ_2 OUTPUT_AUDIO`
+* Usage:
+
+	`./HighLowPass\[Audio\] INPUT_AUDIO FREQ_1 FREQ_2 OUTPUT_AUDIO`
 
 ```
 OUTPUT_AUDIO example: output_audio.wav
@@ -78,23 +100,31 @@ OUTPUT_AUDIO example: output_audio.wav
 
 ## BandPass
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	stdout plain text
 
-Usage:  `./BandPass INPUT_AUDIO FREQ_RANGE FREQ >> OUTPUT_TEXT`
+* Usage:
+
+	`./BandPass INPUT_AUDIO FREQ_RANGE FREQ >> OUTPUT_TEXT`
 
 ## BandPass[Audio]
 
-Input:
+* Input:
+
 	Audio file
 
-Output:
+* Output:
+
 	Audio file
 
-Usage:  `./BandPass\[Audio\] INPUT_AUDIO FREQ_RANGE FREQ OUTPUT_AUDIO`
+* Usage:
+
+	`./BandPass\[Audio\] INPUT_AUDIO FREQ_RANGE FREQ OUTPUT_AUDIO`
 
 ```
 OUTPUT_AUDIO example: output_audio.wav
