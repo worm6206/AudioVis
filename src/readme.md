@@ -79,7 +79,6 @@ OUTPUT_AUDIO example: output_audio.wav
 ```
 
 ## HighLowPass  
-### (NOT WORKING AS I EXPECTED)
 
 * Input:
 
@@ -91,14 +90,13 @@ OUTPUT_AUDIO example: output_audio.wav
 
 * Description:
 
-	`HighLowPass` has implemented 2 filters, High-Pass filter and Low-Pass filter. High-Pass filter only allow sound frequency higher than the decided frequency to pass, so the output audio stream will only have sound frequency higher than the frequency user decided. Low-Pass frequency vice versa. `FREQ_1` is for High-Pass filter, and `FREQ_2` is for Low-Pass filter. If the `FREQ_1` is 80 and `FREQ_2` is 100, the output will only keep the sound frequency between 80Hz and 100Hz. *This is what I expected but the output is not perfect.* The output audio stream is written to `stdout`.
+	`HighLowPass` has implemented 2 filters, High-Pass filter and Low-Pass filter. High-Pass filter only allow sound frequency higher than the decided frequency to pass, so the output audio stream will only have sound frequency higher than the frequency user decided. Low-Pass frequency vice versa. `FREQ_1` is for High-Pass filter, and `FREQ_2` is for Low-Pass filter. If the `FREQ_1` is 80 and `FREQ_2` is 100, the output will only keep the sound frequency between 80Hz and 100Hz. **This is what I expected but the output is not perfect.** The output audio stream is written to `stdout`.
 
 * Usage:
 
 	`./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 > OUTPUT_TEXT`
 
 ## HighLowPass[Audio]  
-### (NOT WORKING AS I EXPECTED)
 
 * Input:
 
@@ -110,7 +108,7 @@ OUTPUT_AUDIO example: output_audio.wav
 
 * Description:
 
-	`HighLowPass` has implemented 2 filters, High-Pass filter and Low-Pass filter. High-Pass filter only allow sound frequency higher than the decided frequency to pass, so the output audio stream will only have sound frequency higher than the frequency user decided. Low-Pass frequency vice versa. `FREQ_1` is for High-Pass filter, and `FREQ_2` is for Low-Pass filter. If the `FREQ_1` is 80 and `FREQ_2` is 100, the output will only keep the sound frequency between 80Hz and 100Hz. *This is what I expected but the output is not perfect.* The output audio stream is written to the output audio file.
+	`HighLowPass` has implemented 2 filters, High-Pass filter and Low-Pass filter. High-Pass filter only allow sound frequency higher than the decided frequency to pass, so the output audio stream will only have sound frequency higher than the frequency user decided. Low-Pass frequency vice versa. `FREQ_1` is for High-Pass filter, and `FREQ_2` is for Low-Pass filter. If the `FREQ_1` is 80 and `FREQ_2` is 100, the output will only keep the sound frequency between 80Hz and 100Hz. **This is what I expected but the output is not perfect.** The output audio stream is written to the output audio file.
 
 * Usage:
 
