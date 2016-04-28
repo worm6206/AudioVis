@@ -78,7 +78,8 @@ OUTPUT_AUDIO example: output_audio.wav
 OUTPUT_AUDIO example: output_audio.wav
 ```
 
-## HighLowPass  (NOT WORKING AS I EXPECTED)
+## HighLowPass  
+(NOT WORKING AS I EXPECTED)
 
 * Input:
 
@@ -96,7 +97,8 @@ OUTPUT_AUDIO example: output_audio.wav
 
 	`./HighLowPass INPUT_AUDIO FREQ_1 FREQ_2 > OUTPUT_TEXT`
 
-## HighLowPass[Audio]  (NOT WORKING AS I EXPECTED)
+## HighLowPass[Audio]  
+(NOT WORKING AS I EXPECTED)
 
 * Input:
 
