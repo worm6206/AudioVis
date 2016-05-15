@@ -1,5 +1,6 @@
 # Makefile created by Kevin Yen
 CPP_FILES := $(wildcard src/*.cpp)
+H_FILES := $(wildcard header/*.cpp)
 EXE_FILES := $(addprefix build/,$(notdir $(CPP_FILES:.cpp=)))
 CC := g++
 PRE_FLAG := -pipe -Wall -O2 -fPIC -I/usr/local/include/essentia/ -I/usr/local/include/essentia/scheduler/ -I/usr/local/include/essentia/streaming/  -I/usr/local/include/essentia/utils -I/usr/include/taglib -I/usr/include/qt4 -D__STDC_CONSTANT_MACROS
@@ -17,8 +18,8 @@ ${OUT_DIR}:
 	@$ ${MKDIR_P} ${OUT_DIR}
 	@echo "${PURPLE}directory \"${OUT_DIR}\" created${NC}"
 
-build/%: src/%.cpp
-	@$ $(CC) $(PRE_FLAG) $< -o $@ $(POST_FLAG)
+build/%: src/%.cpp header/pipeline.cpp header/pipeline.hpp
+	@$ $(CC) $(PRE_FLAG) $< $(H_FILES) -o $@ $(POST_FLAG)
 	@echo "=> ${GREEN}$(notdir $(<:.cpp=))${NC}"
 
 clean: 
