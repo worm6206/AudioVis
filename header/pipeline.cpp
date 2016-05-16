@@ -14,6 +14,11 @@ void pipelineReader::readFile(string fileName){
 	// file -> vector "file"
 	while (getline(infile, line)) file.push_back(line);
 
+
+	/*=============================================
+	=            FIRST LINE - PIPELINE            =
+	=============================================*/
+	
 	size_t pos = 0;
 	string token;
 	while ((pos = file[0].find(delimiter)) != string::npos) {
@@ -21,7 +26,7 @@ void pipelineReader::readFile(string fileName){
 		this->pipeline.push_back(token);
 		file[0].erase(0, pos + delimiter.length());
 	}
-	this->pipeline.push_back(file[0]);
-
+	this->pipeline.push_back(file[0]);	
 	
+	/*=====  End of FIRST LINE - PIPELINE  ======*/
 }
