@@ -7,26 +7,32 @@
 using namespace std;
 
 void pipelineReader::readFile(string fileName){
-	vector<string> file, pipeline;
+	vector<string> file;
 	ifstream infile(fileName);
 	string line, delimiter = " -> ";
 
 	// file -> vector "file"
 	while (getline(infile, line)) file.push_back(line);
 
-
-	/*=============================================
-	=            FIRST LINE - PIPELINE            =
-	=============================================*/
+	/*==============================================
+	=            REST - READ PARAMETERS            =
+	==============================================*/
 	
-	size_t pos = 0;
-	string token;
-	while ((pos = file[0].find(delimiter)) != string::npos) {
-		token = file[0].substr(0, pos);
-		this->pipeline.push_back(token);
-		file[0].erase(0, pos + delimiter.length());
+	for(int i =0;i<file.size();i++){
+		if(file[i][0]>=65&&file[i][0]<=90){
+			vector<string> temp;
+			temp.push_back(file[i].substr(0,file[i].size()-1));
+			while(file[++i]!=""){
+				istringstream iss(file[i]);
+				string a, b;
+				iss >> a >> b;
+				temp.push_back(a.substr(0,a.size()-1));
+				temp.push_back(b);
+			}
+			this->parameters.push_back(temp);
+		}
 	}
-	this->pipeline.push_back(file[0]);	
 	
-	/*=====  End of FIRST LINE - PIPELINE  ======*/
+	/*=====  End of REST - READ PARAMETERS  ======*/
+	
 }

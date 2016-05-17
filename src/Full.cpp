@@ -20,8 +20,15 @@ using namespace essentia::scheduler;
 int main(int argc, char* argv[]) {
 	pipelineReader pl;
 	pl.readFile("../pl/bandpass.pl");
-	for (int x =0;x<pl.pipeline.size();x++){
-		cout << "|" << pl.pipeline[x] << "|" << endl;
+	cout << "ALG:" << endl;
+	for (int x =0;x<pl.parameters.size();x++){
+		cout << pl.parameters[x][0] << endl;
+	}
+	for (int x =0;x<pl.parameters.size();x++){
+		cout << "PARA" << x << ":" <<endl;
+		for(int y=1;y<pl.parameters[x].size();y++){
+			cout << pl.parameters[x][y] << endl;
+		}
 	}
 	return 0;
 }
