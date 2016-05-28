@@ -48,9 +48,6 @@ int main(int argc, char* argv[]) {
                                     "cutoffFrequency", stoi(cutoffFrequency));
 
   Algorithm* Meter = factory.create("LevelExtractor", "frameSize", 882, "hopSize", 441);
-  // Algorithm* BandPass = factory.create("BandPass");
-  // Algorithm* writer = factory.create("MonoWriter",
-  //                                    "filename", outputFilename);
 
   /////////// CONNECTING THE ALGORITHMS ////////////////
   cerr << "-------- connecting algos --------" << endl;

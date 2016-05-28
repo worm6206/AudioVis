@@ -16,7 +16,7 @@ struct pipelineReader {
 	vector<Algorithm*> Algorithms;
 
 	Pool pool;
-	
+
 	void readFile(string fileName);
 	void initAlgorithm();
 };

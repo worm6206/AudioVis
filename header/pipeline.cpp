@@ -21,6 +21,9 @@ using namespace essentia::scheduler;
 
  */
 
+// bool is_digits(const std::string &str) return str.find_first_not_of("0123456789") == std::string::npos;
+
+
 
 void pipelineReader::initAlgorithm(){
 
@@ -28,14 +31,24 @@ void pipelineReader::initAlgorithm(){
 	streaming::AlgorithmFactory& factory = streaming::AlgorithmFactory::instance();
 
 	for(int x =0;x<this->parameters.size();x++){
-		Algorithm* temp = factory.create(this->parameters[x][0]);
+		Algorithm* temp;
+		switch(parameters[x].size()){
+			case 1:
+				temp = factory.create(this->parameters[x][0]);
+				break;
+			case 3:
+				temp = factory.create(this->parameters[x][0],this->parameters[x][1],this->parameters[x][2]);
+				break;
+			default:
+				throw EssentiaException("ERROR: Uncaught dymanicCreate input size");
+		}
 		this->Algorithms.push_back(temp);
 	}
 
 	// for(int x =0;x<this->parameters.size();x++){
 	// 	connect();
 	// }
-	connect(Algorithms[0]->output("audio"), Algorithms[1]->input("signal"));
+	connect(Algorithms[0]->output("audio"), Algorithms[1]->input("audio"));
 
 	Network(Algorithms[0]).run();
 }
