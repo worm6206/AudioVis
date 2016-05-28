@@ -29,9 +29,11 @@ Essentia Guide (For MAC OS X, Linux might also work)
 
 8. Essentia is now installed. 
 
-9. Put your own code in `src/` and run make at the root directory of this project.
+9. Download [this project](https://github.com/worm6206/AudioVis/archive/master.zip) and extract.
 
-10. Executable are at `build/`
+10. Put your own code in `src/` and run `make` at the root directory of this project to compile.
+
+11. Executable are at `build/`
 
 ## COMPILE YOUR OWN CODE:
 
