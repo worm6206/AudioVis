@@ -17,7 +17,7 @@ Essentia Guide (For MAC OS X, Linux might also work)
 
 5. go into directory, run
 	
-	`./waf configure --mode=release --build-static --with-python --with-cpptests --with-examples --with-vamp --with-gaia`
+	`./waf configure --mode=release --build-static`
 
 6. run
 
